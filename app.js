@@ -1,12 +1,13 @@
 const generadorDominio = () => {
-    let pronoun = ['the', 'our'];
-    let adj = ['great', 'big'];
-    let noun = ['jogger', 'racoon'];
-    for (let p of pronoun)
-        for (let a of adj)
-            for (let n of noun)
+    const pronouns = ['the', 'our'];
+    const adjectives = ['great', 'big'];
+    const nouns = ['jogger', 'racoon'];
+    for (let pronoun of pronouns)
 
-                console.log(p + a + n + `.com`);
-}
-
-generadorDominio()
+        pronouns.forEach(pronoun =>
+            adjectives.forEach(adjective =>
+                nouns.forEach(noun => console.log(`${pronoun}${adjective}${noun}.com`))
+            )
+        );
+};
+generadorDominio();
