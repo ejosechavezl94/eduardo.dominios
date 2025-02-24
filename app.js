@@ -7,7 +7,7 @@ const generadorDominio = () => {
         pronouns.forEach(pronoun =>
             adjectives.forEach(adjective =>
                 nouns.forEach(noun => console.log(`${pronoun}${adjective}${noun}.com`))
-            )git 
+            )
         );
 };
 generadorDominio();
